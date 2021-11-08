@@ -5,14 +5,20 @@ Let us consider a product-mix selection problem . Suppose that the Knox Mix comp
 ![alt text](Images/Problem_image.PNG)
 
 
+
+
+
 ## Formulation of Optimization Problem
 
 With production levels in processes 1, 2, 3, 4 as x1, x2, x3, x4 respectively. The problem can then be formulated as <br />
-z = 4x1 + 5x2 + 9x3 + 11x4			(Profit)<br />
-       Max z subject to constraints <br />
-g1(x)  =   x1 + x2 + x3 + x4   <  15			(Man Weeks) <br />
-g2(x)  =   7x1 + 5x2 + 3x3 + 2x4  <  120		(Material Y) <br />
-g3(x)  =   3x1 + 5x2 + 10x3 + 15x4  < 100		(Material Z) <br />
+```      
+                z = 4x1 + 5x2 + 9x3 + 11x4			(Profit)<br />
+                Max z subject to constraints <br />
+		
+g1(x)  =   x1 + x2 + x3 + x4   <  15			        (Man Weeks) <br />
+g2(x)  =   7x1 + 5x2 + 3x3 + 2x4  <  120		        (Material Y) <br />
+g3(x)  =   3x1 + 5x2 + 10x3 + 15x4  < 100		        (Material Z) <br />
+```
 
 We then solve this linear programming problem by use of the Simplex Method - (using Tora Software) . The optimal solution is: 
 
@@ -24,7 +30,9 @@ Let us assume that the available  constraints in the above problem are imprecise
 
 ```
                      1					if g1(x)  <  15
-μ1(x) =    1 - [ (g1(x) - 15) / 4]        		if 15 <  g1(x)  <  19
+		     
+μ1(x) =    1 - [ (g1(x) - 15) / 4]        		if 15 < g1(x) < 19
+
                      0					if g1(x)  >  19
               
 ```
@@ -32,16 +40,20 @@ Let us assume that the available  constraints in the above problem are imprecise
 
 ```
                      1				      	if g2(x) < 120
-μ2(x) =     1 - [ (g2(x) - 120) / 30]        	        if 120 <  g2(x)  <  150
-	              0					if g2(x) > 150
+		     
+μ2(x) =    1 - [ (g2(x) - 120) / 30]        	        if 120 < g2(x) < 150
+
+	             0					if g2(x) > 150
               
 ```
 ![alt text](Images/graph2.PNG)
 
 ``` 
-      	       1				     	if g3(x) < 100
-μ3(x) =    1 - [ (g3(x) - 100) / 25]        	        if 100 <  g3(x)  <  125
-	       0				   	if g3(x) > 125
+      	             1				     	if g3(x) < 100
+	       
+μ3(x) =    1 - [ (g3(x) - 100) / 25]        	        if 100 < g3(x) < 125
+
+	             0				   	if g3(x) > 125
 
 ```
 ![alt text](Images/graph3.PNG)
@@ -85,6 +97,9 @@ The final simplex table is shown below. Since the RHS ( 50/7 + 15θ/7 ), (325/7 
 The final parametric tableau of the simplex method for the Knox selection problem:
 
 ![alt text](Images/Table1.PNG)
+
+
+
 
 
 ## Result
