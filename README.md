@@ -1,5 +1,6 @@
 # The Knox Production Mix Selection Problem
-## with Imprecise Constraints
+## Solution of optimatization problem with imprecise constraints using Verdegay's approach.
+
 <br /> Authored By:
 <br /> Pravahan Jaivili   	(IMH/10046/18)
 <br /> Ketan Raj 		        (IMH/10015/18)
