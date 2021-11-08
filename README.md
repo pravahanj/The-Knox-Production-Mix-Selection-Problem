@@ -1,9 +1,8 @@
-# The-Knox-Production-Mix-Selection-Problem-
-## The Knox Production-Mix Selection Problem - A Fuzzy Approach
-<br /> Supervisor:Dr Prabhjot Kaur
+# The Knox Production Mix Selection Problem
+## with Imprecise Constraints
 <br /> Authored By:
-<br />Pravahan Jaivili   	(IMH/10046/18)
-<br />Ketan Raj 		(IMH/10015/18)
+<br /> Pravahan Jaivili   	(IMH/10046/18)
+<br /> Ketan Raj 		        (IMH/10015/18)
 
 Detailed Report : https://github.com/pravahanj/The-Knox-Production-Mix-Selection-Problem/blob/main/Report.md <br />
 Tora Detailed Solution : https://github.com/pravahanj/The-Knox-Production-Mix-Selection-Problem/blob/main/Simplex%20Solution.pdf
